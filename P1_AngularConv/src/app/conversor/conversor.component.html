@@ -1,23 +1,30 @@
 <p id="Titulo">conversor Moedas</p><br>
 
-<table class="select_moeda">
+<div id="tutorial">
+  <h1>insira os valores com ponto no lugar de virgula</h1> <br>
+  <h1>exemplo: 1.20  1.60  0.60...</h1><br><br>
+</div>
+
+
+
+<table id="select_moeda">
     <thead>
       <tr>  
         <th scope="col"> 
-
+    <div id="opts">
         <select [(ngModel)] = "indx1">
-            <option >Dolar</option>
-            <option >Euro</option>
-            <option >Real</option>
-       
-        </select> para 
+          <option >Dolar</option>
+          <option >Euro</option>
+          <option >Real</option>
+    </select> para 
 
-        <select [(ngModel)] = "indx2">
-            <option >Dolar</option>
-            <option >Euro</option>
-            <option >Real</option>
-       
-        </select>
+      <select [(ngModel)] = "indx2">
+          <option >Dolar</option>
+          <option >Euro</option>
+          <option >Real</option>
+      </select>
+    </div>
+        
 
            
 
@@ -25,7 +32,7 @@
       </tr>
     </thead>
     
-<div class="conversores">
+<div id="conversores">
     <tbody>
       <tr>
 
@@ -44,10 +51,5 @@
     
     </tbody>
 </div> 
-
-<div class="convertit">
-
-
-</div>
 
   </table>
