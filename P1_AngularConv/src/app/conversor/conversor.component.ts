@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ConversorComponent {
 M1: number = 0;
 convert: any;
-
+TaxaCambio: any;
 indx1: any;
 indx2: any;
 
@@ -23,14 +23,14 @@ indx2: any;
       if (this.indx2 == "Euro") 
       {
         
-       this.convert = this.M1 * 0.96
+       this.convert = this.M1 * this.TaxaCambio
 
       }
 
       if (this.indx2 == "Real") 
       {
         
-       this.convert = this.M1 * 5
+       this.convert = this.M1 * this.TaxaCambio
 
       }
 
@@ -48,14 +48,14 @@ indx2: any;
       if (this.indx2 == "Dolar") 
       {
         
-       this.convert = this.M1 * 1.09;
+       this.convert = this.M1 * this.TaxaCambio;
 
       }
 
       if (this.indx2 == "Real") 
       {
         
-       this.convert = this.M1 * 5.46;
+       this.convert = this.M1 * this.TaxaCambio;
 
       }
 
@@ -73,14 +73,14 @@ indx2: any;
       if (this.indx2 == "Dolar") 
       {
         
-       this.convert = this.M1 * 0.20;
+       this.convert = this.M1 * this.TaxaCambio;
 
       }
 
       if (this.indx2 == "Euro") 
       {
         
-       this.convert = this.M1 * 0.18;
+       this.convert = this.M1 * this.TaxaCambio;
 
       }
 
