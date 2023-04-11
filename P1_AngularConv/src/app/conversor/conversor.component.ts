@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./conversor.component.css']
 })
 export class ConversorComponent {
+M1: number = 0;
+M2: number = 0;
+indx: any;
+
+  Conv(){
+
+    
+  }
 
 }

@@ -1,20 +1,33 @@
-<p id="Titulo">conversor Moedas</p>
+<p id="Titulo">conversor Moedas</p><br>
+    
+Digite 
+    1 para dolar <br>
+    2 para Euro <br>
+    3 para Real <br>
 
-<table class="table">
+<table class="select_moeda">
     <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col"></th>
+      <tr>  
+        <th scope="col"> 
+
+           Moeda 1<input type="text" [(ngModel)] = "indx1">
+           Moeda 2<input type="text" [(ngModel)] = "indx2">
+
+        </th>
       </tr>
     </thead>
+    
+<div class="conversores">
     <tbody>
       <tr>
-        <th scope="row">Moeda <input type="text" [(ngModel)] = "coin"></th>
+        <th scope="row">Moeda <input type="text"></th>
         <td></td>
       </tr>
       <tr>
-        <th scope="row">  Moeda Convertida<input type="text"></th>
+        <th scope="row">  Moeda Convertida<input type="text" readonly></th>
         <td></td>
       </tr>
     </tbody>
+</div> 
+
   </table>
